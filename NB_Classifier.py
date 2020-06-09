@@ -11,7 +11,7 @@ import pandas as pd
 import math
 types = {"Refund": str,"Marital_Status": str,"Taxable_Income": float,"Evade":str}
 names = ["Refund","Marital_Status","Taxable_income","Evade"]
-dataset = pd.read_csv("E:\Laptop Stuff 2020\DS\XYZ\Data Science Assignments\Labs\Lab_6\\datafile.csv", dtype=types)
+dataset = pd.read_csv("datafile.csv", dtype=types)
 print(dataset)
 def prob_2(s_col,s_flag,s_class):
     prob_arr = np.where((dataset[s_col] == s_flag) & (dataset[s_class] == 'Yes'))
